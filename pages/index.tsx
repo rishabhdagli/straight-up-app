@@ -3,10 +3,9 @@ import { useRouter } from 'next/router';
 
 export default function Index() {
   const router = useRouter();
-
   useEffect(() => {
-    router.replace('/home'); // Redirect to /home automatically
+    router.replace('/home'); // automatically sends user to /home
   }, [router]);
 
-  return null; // nothing else renders
+  return null;
 }
